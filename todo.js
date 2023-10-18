@@ -11,8 +11,11 @@ add.addEventListener("click", ()=> {
         ul.appendChild(li);
         input.value = "";
         let del = document.createElement("button");
-        del.classList.add(".del");
-        del.classList.add(".btn-outline-*")
+        del.type = "button";
+        //del.classList.add(".del");
+        del.classList.add("btn");
+        del.classList.add("btn-outline-primary");
+        del.classList.add("btn-lg");
         del.textContent = "Delete Task";
         li.append(del);
         del.addEventListener("click",()=>{
